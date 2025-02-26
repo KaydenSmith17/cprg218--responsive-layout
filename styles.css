@@ -1,0 +1,114 @@
+/* Global Styles (common to all devices) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+  
+  header.header-container {
+    background-color: #120323;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  header.header-container img {
+    max-width: 80px;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  header.header-container h1 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the puffin image is fully visible */
+    display: block;
+  }
+  
+  footer {
+    background-color: #d9043d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Desktop Styles: Devices 1000px wide or greater */
+  @media (min-width: 1000px) {
+    #container {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+    
+    main {
+      flex: 3;
+      padding: 1rem;
+    }
+    
+    aside {
+      flex: 1;
+      background-color: #97bf04;
+      padding: 1rem;
+      color: #fff;
+    }
+  }
+  
+  /* Tablet Styles: Devices less than 1000px but at least 768px wide */
+  @media (max-width: 999px) and (min-width: 768px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    
+    main,
+    aside {
+      padding: 1rem;
+    }
+    
+    aside {
+      background-color: #97bf04;
+      color: #fff;
+    }
+  }
+  
+  /* Mobile Styles: Devices less than 768px wide */
+  @media (max-width: 767px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    
+    header.header-container {
+      padding: 1rem;
+    }
+    
+    main,
+    aside {
+      padding: 0.75rem;
+    }
+    
+    aside {
+      background-color: #97bf04;
+      color: #fff;
+    }
+    
+    footer {
+      padding: 0.75rem;
+    }
+  }
+  
